@@ -1,0 +1,122 @@
+
+
+/* GLOBAL RESET */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+
+.bold
+{
+    font-weight: bolder;
+}
+
+.light
+{
+    font-weight: 200;
+}
+
+
+/* -------- BODY -------- */
+
+body
+{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+/* -------- HEADER -------- */
+
+.header-section
+{
+    background-color: var(--header-section-bgcolor);
+    height: 15vh;
+    display: flex;
+    color: var(--header-text-fontcolor);
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 35px;
+}
+
+.header-section h1
+{
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.header-section .logo-container p
+{
+    color: var(--header-slogan-fontcolor);
+}
+
+.header-information-container
+{
+    display: flex;
+    gap: 25px;
+}
+
+.header-info
+{
+    display: flex;
+    gap: 10px;
+}
+
+
+.header-information-container .header-info div.phone, 
+.header-information-container .header-info div.email, 
+.header-information-container .header-info div.location 
+{
+    width: 40px;
+    height: 40px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    
+}
+
+.header-information-container .header-info div.phone img,
+.header-information-container .header-info div.email img,
+.header-information-container .header-info div.location img
+{
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+}
+
+.phone-info-container,
+.mail-info-container,
+.location-info-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.phone-info-container p.info-value,
+.mail-info-container p.info-value,
+.location-info-container p.info-value
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+
+.phone-info-container p.info-title,
+.mail-info-container p.info-title,
+.location-info-container p.info-title
+{
+    color: var(--header-info-title-fontcolor);
+    font-size: 14px;
+}
+
+
+
+
+
