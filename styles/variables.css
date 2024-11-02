@@ -9,4 +9,24 @@
     --header-slogan-fontcolor : #ebe6e6 ;
     --header-info-title-fontcolor : #ebe6e6 ;
     
+    --subheader-section-bgcolor : #FF6B35 ;
+    --subheader-links-fontcolor : #FFFFFF ;
+
+    --hero-maintext-fontcolor : #FFFFFF;
+    --hero-subtext-fontcolor : #cccccc;
+    --hero-button-bgcolor : #FF6B35;
+    --hero-button-fontcolor : #FFFFFF;
+    --hero-button-fontcolor-hover : #1D2D50;
+
+    --services-section-bgcolor : #FF6B35 ;
+    --services-header-fontcolor : #FFFFFF ;
+    --services-para-fontcolor : #FFFFFF  ;
+    --services-button-fontcolor : #FFFFFF ;
+    --services-button-fontcolor-hover : #1D2D50 ;
+    --services-button-bordercolor : #FFFFFF ;
+    --services-button-bordercolor-hover : #1D2D50;
+    --services-card-bgcolor : #1D2D50;
+    --services-card-title-fontcolor : #FFFFFF;
+    --services-card-para-fontcolor : #cccccc;
+    
 }
