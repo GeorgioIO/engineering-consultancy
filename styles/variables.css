@@ -28,5 +28,19 @@
     --services-card-bgcolor : #1D2D50;
     --services-card-title-fontcolor : #FFFFFF;
     --services-card-para-fontcolor : #cccccc;
+
+    --quote-section-bgcolor : #FFFFFF ;
+    --quote-main-text-fontcolor : #000000 ;
+    --quote-attribution-text-fontcolor : #9c9a9a ;
+
+    --works-section-bgcolor :#FFFFFF ;
+
+    --contact-section-bgcolor : #FFFFFF;
+    --contact-section-form-bordercolor : #1D2D50 ;
+    --contact-section-input-bordercolor : grey;
+    --contact-section-message-button-bgcolor : #FF6B35;
+    --contact-section-message-button-fontcolor : #FFFFFF;
+    --contact-section-message-button-bordercolor-hover : grey;
+    --contact-ai-title-fontcolor : grey ;
     
 }

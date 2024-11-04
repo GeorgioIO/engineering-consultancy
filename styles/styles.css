@@ -33,7 +33,7 @@ body
 }
 
 
-/* -------- HEADER -------- */
+/* -------- HEADER + FOOTER -------- */
 
 .header-section
 {
@@ -365,4 +365,270 @@ body
 {
     line-height: 1;
     color: var(--services-card-para-fontcolor );
+}
+
+/* -------- QUOTE -------- */
+
+.quote-section
+{
+    background-color: var(--quote-section-bgcolor);
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+} 
+
+.quote-text-container p
+{
+    font-size: 26px ;
+    text-align: center;
+    font-weight: 900;
+    color: var(--quote-main-text-fontcolor);
+    font-style: italic;
+}
+
+.quote-text-container h3.attribution
+{
+    font-size: 20px;
+    color: var(--quote-attribution-text-fontcolor);
+    font-weight: 900;
+}
+
+/* -------- WORKS SECTION -------- */
+
+.works-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--works-section-bgcolor);
+    width: 100vw;
+    height: 250px;
+    gap: 35px;
+}
+
+.works-section h3.section-title
+{
+    font-size: 36px;
+    font-weight: bold;
+
+}
+.works-logo-container
+{
+    display: flex;
+    background-color: var(--works-section-bgcolor);
+    padding: 25px;
+    width: 800px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.works-logo-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* -------- CONTACT -------- */
+
+.contact-section
+{
+    background-color: var(--contact-section-bgcolor);
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section form
+{
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    height: 450px;
+    gap: 55px;
+    padding: 45px ;
+    border: 8px solid var(--contact-section-form-bordercolor);
+    border-radius: 10px;
+    background-image: url("../images/polygon-scatter-haikei.svg");
+}
+
+form h1
+{
+    font-size: 45px;
+}
+
+.fullname-container
+{
+    display: flex;
+    gap: 25px;
+}
+.contact-inputs-section
+{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-fields-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-fields-container .email input,
+.contact-fields-container .description input
+{
+    width: 100%;
+}
+
+.contact-fields-container .fullname-container .firstname input,
+.contact-fields-container .fullname-container .lastname input,
+.contact-fields-container .email input,
+.contact-fields-container .description input
+{
+   border: none;
+   /* background-color: black; */
+   padding : 5px 5px 10px 5px;
+   border-bottom: 3px var(--contact-section-input-bordercolor) solid; 
+}
+
+.contact-fields-container .fullname-container .firstname input:focus,
+.contact-fields-container .fullname-container .lastname input:focus,
+.contact-fields-container .email input:focus,
+.contact-fields-container .description input:focus
+{
+   outline: none;
+}
+
+.contact-fields-container .sendmessage-container 
+{
+    width: 35%;
+    height: 40px;
+}
+
+.contact-fields-container .sendmessage-container button
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--contact-section-message-button-bgcolor);
+    border: none;
+    border-radius: 8px;
+    color: var(--contact-section-message-button-fontcolor);
+    font-weight: 700;
+    padding: 10px;
+    transition: 1s ease all;
+} 
+
+.contact-fields-container .sendmessage-container button:hover
+{
+    border: 2px solid var(--contact-section-message-button-bordercolor-hover);
+} 
+
+.ai-help-container h2
+{
+    color: var(--contact-ai-title-fontcolor);
+    margin-bottom: 10px;
+}
+
+.ai-help-container p
+{
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* -------- FOOTER -------- */
+
+.footer-section
+{   
+    position: static;
+    bottom: 0;
+    background-color: var(--header-section-bgcolor);
+    height:130px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: var(--header-text-fontcolor);
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-information-container
+{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-info
+{
+    display: flex;
+    gap: 10px;
+}
+
+
+.footer-information-container .footer-info div.phone, 
+.footer-information-container .footer-info div.email, 
+.footer-information-container .footer-info div.location 
+{
+    width: 40px;
+    height: 40px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.footer-information-container .footer-info div.phone img,
+.footer-information-container .footer-info div.email img,
+.footer-information-container .footer-info div.location img
+{
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+}
+
+.phone-info-container,
+.mail-info-container,
+.location-info-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.phone-info-container p.info-value,
+.mail-info-container p.info-value,
+.location-info-container p.info-value
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-wrap: nowrap;
+}
+
+
+.phone-info-container p.info-title,
+.mail-info-container p.info-title,
+.location-info-container p.info-title
+{
+    color: var(--footer-info-title-fontcolor);
+    font-size: 14px;
 }
