@@ -57,6 +57,7 @@ body
 .header-section .logo-container p
 {
     color: var(--header-slogan-fontcolor);
+    text-wrap: nowrap;
 }
 
 .header-information-container
@@ -224,6 +225,8 @@ body
     text-wrap: wrap;
     text-align: center;
     margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .learnmore-button-container
@@ -631,4 +634,309 @@ form h1
 {
     color: var(--footer-info-title-fontcolor);
     font-size: 14px;
+}
+
+/* ------ MEDIA QUERIES ------ */
+
+@media (max-width: 1024px) 
+{
+     /* HERO */
+
+     .hero-section h1
+     {
+         font-size: 55px;
+     }
+
+    /* SERVICES */
+
+    .services-section
+    {
+
+        gap: 25px;
+        padding: 15px;        
+    }
+
+    .services-text h2
+    {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 956px)  
+{
+    /* HEADER */
+    .header-section
+    {
+        flex-direction: column;
+        height: 150px ;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header-section .logo-container 
+    {
+        text-align: center;
+    }
+
+    /* HERO */
+
+    .hero-section h1
+    {
+        font-size: 50px;
+    }
+
+    .hero-section p
+    {
+        font-size: 12px;
+        text-wrap: wrap;
+    }
+
+    /* SERVICES */
+
+    .services-boxes-container
+    {
+        width: 600px;
+        height: 350px;
+    }
+
+    .service-card
+    {
+        width: 280px;
+        height: 150px;
+        padding: 12px;
+        display: flex;
+        gap: 10px;
+        
+    }
+
+    .service-card .service-card-info-container h3
+    {
+        color: var(--services-card-title-fontcolor);
+        font-size: 20px;
+    }
+
+
+    /* WORKS */
+
+    .works-logo-container
+    {
+        width: 700px;
+        
+    }
+    /* CONTACT */
+
+    .contact-section form
+    {        
+        width: 750px;
+    }
+    
+}
+
+@media (max-width: 884px)  
+{
+    /* HERO */
+
+    .hero-section h1
+    {
+        font-size: 45px;
+    }
+
+    .hero-section p
+    {
+        font-size: 10px;
+        flex-shrink: 0;
+    }
+
+    /* -------- SERVICES --------  */
+
+    .services-section
+    {
+        height: 580px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        
+    }
+
+    .services-info-container
+    {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* CONTACT */
+
+    .contact-section form
+    {        
+        width: 750px;
+    }
+        
+     
+   
+
+}
+
+@media (max-width: 754px)  
+{
+    /* CONTACT */
+
+    .contact-section form
+    {        
+        width: 700px;
+    }
+        
+    .ai-help-container p
+    {
+        font-weight: bold;
+        line-height: 1.1;
+    }
+   
+
+}
+ 
+@media (max-width: 754px)  
+{
+    /* CONTACT */
+
+    .contact-section form
+    {        
+        width: 650px;
+    }
+     
+    .contact-inputs-section
+    {
+        gap: 15px;
+    }
+
+    /* WORKS */
+
+    .works-logo-container
+    {
+        width: 600px;
+        
+    }
+   
+}
+
+@media (max-width: 650px)  
+{
+    /* HEADER */
+
+    .header-information-container
+    {
+        gap: 10px;
+    }
+
+    /* CONTACT */
+
+    .contact-section form
+    {        
+        width: 550px;
+    }
+     
+    .contact-inputs-section
+    {
+        gap: 15px;
+    }
+
+    .ai-help-container 
+    {
+        display: none;
+    }
+
+    /* WORKS */
+
+    .works-section
+    {
+        height: 550px;
+    }
+
+    .works-logo-container
+    {
+        width: 350px;
+        height: 400px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        
+    }
+}
+
+@media (max-width: 618px)  
+{
+
+    /* HEADER */
+    .header-section
+    {
+        height: 100px ;
+    }
+
+    .header-information-container
+    {
+        display: none;
+    }
+   
+}
+
+@media (max-width: 618px)  
+{
+
+    /* HERO */
+
+    .hero-section h1
+    {
+        font-size: 35px;
+    }
+
+    .hero-section p
+    {
+        font-size: 9px;
+    }
+
+    /* CONTACT */
+
+    .contact-section form
+    {        
+        width: 470px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sendmessage-container
+    {
+        align-self: center;
+    }    
+}
+
+@media (max-width: 612px) 
+{
+    /* -------- SERVICES --------  */
+
+    .services-section
+    {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        
+    }
+
+    .services-info-container
+    {
+        align-items: center;
+        text-align: center;
+    }
+    .services-boxes-container
+    {
+        display: flex;
+        gap: 10px;
+        height: 800px;
+        width: 300px;
+    }
 }
