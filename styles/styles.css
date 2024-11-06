@@ -227,6 +227,7 @@ body
     margin-bottom: 15px;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 15px;
 }
 
 .learnmore-button-container
@@ -539,6 +540,7 @@ form h1
     font-weight: 700;
     padding: 10px;
     transition: 1s ease all;
+    text-wrap: nowrap;
 } 
 
 .contact-fields-container .sendmessage-container button:hover
@@ -939,4 +941,141 @@ form h1
         height: 800px;
         width: 300px;
     }
+}
+
+@media (max-width: 552px) 
+{
+
+    /* SUB-HEADER */
+    .links-container ul
+    {   
+        gap: 15px;
+    }
+
+    /* QUOTE */
+
+    .quote-text-container p
+    {
+        padding: 10px;
+        font-size: 20px ;
+    }
+
+    /* CONTACT */
+
+    .contact-section form
+    {        
+        width: 430px;
+    }
+
+    /* -------- FOOTER -------- */
+
+    .footer-section
+    {   
+        height:170px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-information-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .footer-section .logos-container
+    {
+        gap: 15px;
+        margin-right: 15px;
+    }   
+
+    .footer-section .socials-logo
+    {
+        width: 35px;
+        height: 35px;
+    }
+
+    
+}
+
+@media (max-width: 476px) 
+{
+
+    /* SUB-HEADER */
+    .sub-header-section .logos-container
+    {   
+        display: none;
+    }
+
+    /* QUOTE */
+
+    .quote-text-container p
+    {
+        padding: 10px;
+        font-size: 20px ;
+    }
+
+    /* CONTACT */
+
+    .contact-section form
+    {        
+        width: 430px;
+    }
+
+    /* -------- FOOTER -------- */
+
+    .footer-section
+    {   
+        height:170px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-information-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .footer-section .logos-container
+    {
+        gap: 15px;
+        margin-right: 15px;
+    }   
+
+    .footer-section .socials-logo
+    {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* -------- CONTACT -------- */
+
+
+
+    .contact-section form
+    {
+        width: 400px;
+    }
+
+    .contact-fields-container .email ,
+    .contact-fields-container .description 
+    {
+        width: 300px;
+    }
+
+    .fullname-container
+    {
+        gap: 10px;
+    }
+
+    .contact-fields-container .fullname-container .firstname,
+    .contact-fields-container .fullname-container .lastname
+    {
+        width: 100px;
+    }
+
 }
