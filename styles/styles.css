@@ -391,6 +391,7 @@ body
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    padding: 15px;
 } 
 
 .quote-text-container p
@@ -638,6 +639,35 @@ form h1
     font-size: 14px;
 }
 
+/* ------ DEVELOPER ------ */
+    .developer
+    {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--developer-section-bgcolor);
+    }
+
+    .developer p{
+        font-size: 20px;
+    }
+
+    .developer .github-container
+    {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .developer .github-container img
+    {
+        width: 100%;
+        height: 100%;
+    }
 /* ------ MEDIA QUERIES ------ */
 
 @media (max-width: 1024px) 
@@ -1069,13 +1099,199 @@ form h1
 
     .fullname-container
     {
+        justify-content: space-between;
         gap: 10px;
     }
 
     .contact-fields-container .fullname-container .firstname,
     .contact-fields-container .fullname-container .lastname
     {
-        width: 100px;
+        width: 130px;
+    }
+
+    .contact-fields-container .fullname-container .firstname input,
+    .contact-fields-container .fullname-container .lastname input
+    {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 425px) 
+{
+    /* HERO */
+    .hero-section h1
+    {
+        font-size: 30px;
+    }
+
+    /* -------- FOOTER -------- */
+
+    .footer-section .logos-container
+    {
+        gap: 8px;
+    }   
+
+    /* -------- CONTACT -------- */
+
+
+
+    .contact-section form
+    {
+        width: 350px;
+    }
+
+    .contact-fields-container .sendmessage-container 
+    {
+        width: 45%;
+    }
+ 
+}
+
+@media (max-width: 387px) 
+{
+ 
+    /* HERO */
+    .hero-section h1
+    {
+        font-size: 27px;
+    }
+
+        /* WORKS */
+
+        .works-section
+        {
+            height: 670px;
+        }
+
+        .works-logo-container
+        {
+            
+            width: 280px;
+            height: 560px;
+        }
+
+    /* -------- FOOTER -------- */
+
+    .footer-section .logos-container
+    {
+        gap: 2px;
+        flex-direction: column;
+    }
+    
+    /* -------- CONTACT -------- */
+
+    .contact-section form
+    {
+        width: 300px;
+    }
+
+    .contact-section form h1
+    {
+        font-size: 35px;    
+    }
+
+    .fullname-container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+    }
+    
+    .contact-fields-container .fullname-container,
+    .contact-fields-container .email,
+    .contact-fields-container .description 
+    {
+        width: 250px;
+    }
+
+    .contact-fields-container .fullname-container .firstname,
+    .contact-fields-container .fullname-container .lastname
+    {
+        width: 100%;
+    }
+    
+    .contact-fields-container .sendmessage-container 
+    {
+        width: 50%;
+    }
+}
+
+@media (max-width: 351px) 
+{
+    
+    /* SUB-HEADER */
+    .links-container ul
+    {   
+        gap: 8px;
+    }
+
+    /* HERO */
+    .hero-section h1
+    {
+        font-size: 23px;
+    }
+
+    /* WORKS */
+
+    .works-logo-container
+    {
+        
+        width: 230px;
+        height: 560px;
+    }
+    
+    /* -------- CONTACT -------- */
+
+    .contact-section form
+    {
+        width: 270px;
+    }
+
+
+    .fullname-container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+    }
+    
+    .contact-fields-container .fullname-container,
+    .contact-fields-container .email,
+    .contact-fields-container .description 
+    {
+        width: 220px;
+    }
+
+    
+ 
+}
+
+@media (max-width: 320px) 
+{
+    /* -------- SERVICES --------  */
+
+    .services-section
+    {
+        height: 1050px;
+        
+        
+    }
+    .services-boxes-container
+    {
+        display: flex;
+        gap: 10px;
+        height: 800px;
+        width: 300px;
+    }
+
+    .service-card
+    {
+        width: 250px;
+        height: 190px;
     }
 
 }
