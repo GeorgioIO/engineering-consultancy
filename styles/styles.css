@@ -648,10 +648,12 @@ form h1
         justify-content: center;
         align-items: center;
         background-color: var(--developer-section-bgcolor);
+        padding: 10px;
     }
 
     .developer p{
         font-size: 20px;
+        text-wrap: nowrap;
     }
 
     .developer .github-container
@@ -1115,7 +1117,12 @@ form h1
         width: 100%;
     }
 
+    /* ------ DEVELOPER ------ */
     
+    .developer p{
+        font-size: 18px;
+    }
+
 }
 
 @media (max-width: 425px) 
@@ -1146,6 +1153,13 @@ form h1
     {
         width: 45%;
     }
+
+     /* ------ DEVELOPER ------ */
+    
+     .developer p{
+        font-size: 14px;
+    }
+    
  
 }
 
@@ -1294,4 +1308,10 @@ form h1
         height: 190px;
     }
 
+     /* ------ DEVELOPER ------ */
+    
+     .developer p{
+        font-size: 12px;
+    }
+    
 }
